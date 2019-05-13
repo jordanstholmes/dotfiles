@@ -1,0 +1,7 @@
+[color]
+	ui = true
+[user]
+	name = Jordan Holmes
+	email = jordanstholmes@gmail.com
+[pager]
+	branch = false
