@@ -11,7 +11,7 @@ parse_git_branch() {
 # the 33 is the color code from the 256 color set
 # m\] = end the format info
 # format will extend from then until it hits a clear >> [\e[00m\] 
-export PS1="\n\[\e[1;38;5;33m\]\w\[\e[00m\] $(parse_git_branch)\n\[\e[1;38;5;196m\]❯\[\e[00m\] "
+export PS1="\n\[\e[1;38;5;33m\]\w\[\e[00m\]\[\e[1;38;5;239m\]$(parse_git_branch)\[\e[00m\]\n\[\e[1;38;5;196m\]❯\[\e[00m\] "
 
 alias kb="~/.shell-scripts/keyboard-shortcuts.sh"
 alias kbo="~/.shell-scripts/show-shortcuts.sh"
