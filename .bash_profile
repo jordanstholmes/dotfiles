@@ -1,5 +1,17 @@
-# Configure command line prompt
-export PS1="\n\[\e[1;38;5;33m\]\w\[\e[00m\]\n\[\e[1;38;5;196m\]❯\[\e[00m\] "
+####### Configure command line prompt ########
+# function to grab the current branch if in a git repo
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# Configure command-line prompt
+# \n = new line
+# \[\e[ = start format info
+# 1;38;5 >> the '1' is for bold, the '38;5' says the upcoming color code is for foreground
+# the 33 is the color code from the 256 color set
+# m\] = end the format info
+# format will extend from then until it hits a clear >> [\e[00m\] 
+export PS1="\n\[\e[1;38;5;33m\]\w\[\e[00m\] $(parse_git_branch)\n\[\e[1;38;5;196m\]❯\[\e[00m\] "
 
 alias kb="~/.shell-scripts/keyboard-shortcuts.sh"
 alias kbo="~/.shell-scripts/show-shortcuts.sh"
