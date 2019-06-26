@@ -1,3 +1,6 @@
+# Configure command line prompt
+export PS1="\[\e[1;38;5;33m\]\w\[\e[00m\]\n\[\e[1;38;5;196m\]❯\[\e[00m\] "
+
 alias kb="~/.shell-scripts/keyboard-shortcuts.sh"
 alias kbo="~/.shell-scripts/show-shortcuts.sh"
 
