@@ -1,3 +1,16 @@
+" SETUP Plug
+" Plugins will be downloaded under the specified directory
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'joshdick/onedark.vim'
+
+ " list ends here. Plugins become visible to Vim after this call
+call plug#end()
+
+
 " Shows the command (e.g. d - for delete) in the bottom right of the screen
 set showcmd
 
