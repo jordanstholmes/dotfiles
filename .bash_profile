@@ -13,12 +13,12 @@ newline="\n"
 # 1;38;5 >> the '1' is for bold, the '38;5' says the upcoming color code is for foreground
 # the 33 is the color code from the 256 color set
 # m\] = end the format info
-blue="\[\e[1;38;5;33m\]"
+green="\[\e[1;38;5;50m\]"
 clear_format="\[\e[00m\]"
 working_dir="\w"
 gray="\[\e[1;38;5;239m\]"
 red="\[\e[1;38;5;196m\]"
-export PS1="$newline$blue$working_dir$clear_format$gray$(parse_git_branch)$clear_format$newline${red}❯$clear_format "
+export PS1="$newline$green$working_dir$clear_format$gray$(parse_git_branch)$clear_format$newline${red}❯$clear_format "
 
 ####### Add alias for keyboard shortcut scripts #######  
 alias kb="~/.shell-scripts/keyboard-shortcuts.sh"
