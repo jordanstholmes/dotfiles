@@ -18,7 +18,7 @@ clear_format="\[\e[00m\]"
 working_dir="\w"
 gray="\[\e[1;38;5;239m\]"
 red="\[\e[1;38;5;196m\]"
-export PS1="$newline$green$working_dir$clear_format$gray$(parse_git_branch)$clear_format$newline${red}❯$clear_format "
+export PS1="$newline$green$working_dir$clear_format$gray\$(parse_git_branch)$clear_format$newline${red}❯$clear_format "
 
 ####### Add alias for keyboard shortcut scripts #######  
 alias kb="~/.shell-scripts/keyboard-shortcuts.sh"
