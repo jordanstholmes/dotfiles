@@ -1,4 +1,4 @@
-" SETUP Plug
+" ###### SETUP PLUGINS AND PLUGIN MANAGER ###### 
 " Plugins will be downloaded under the specified directory
 call plug#begin('~/.vim/plugged')
 
@@ -10,7 +10,7 @@ Plug 'joshdick/onedark.vim'
  " list ends here. Plugins become visible to Vim after this call
 call plug#end()
 
-
+" ###### GENERAL COMMANDS ###### 
 " Shows the command (e.g. d - for delete) in the bottom right of the screen
 set showcmd
 
@@ -27,7 +27,7 @@ set shiftwidth=2
 " On pressing tab, insert 2 spaces
 set expandtab
 
-" Turn off paren match highlighting
+" ###### TURN OFF PAREN MATCH HIGHLIGHTING ######   
 " Disable parentheses matching depends on system. This way we should address all cases (?)
 set noshowmatch
 " NoMatchParen " This doesnt work as it belongs to a plugin, which is only loaded _after_ all files are.
@@ -43,3 +43,7 @@ augroup plugin_initialize
     autocmd!
     autocmd VimEnter * call StopMatchParen()
 augroup END
+
+" ###### FILE EXPLORER CONFIGURATION (netrw) ######
+" Remove the directory banner
+let g:netrw_banner = 0
