@@ -30,6 +30,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/Users/jordanholmes/Library/Python/2.7/bin:$PATH"
-
+export PATH="$PATH:~/.shell-scripts"
 ####### Colorize ls output  ########
 alias ls='ls -G'
