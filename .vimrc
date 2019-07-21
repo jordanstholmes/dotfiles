@@ -47,3 +47,5 @@ augroup END
 " ###### FILE EXPLORER CONFIGURATION (netrw) ######
 " Remove the directory banner
 let g:netrw_banner = 0
+" Set the display style
+let g:netrw_liststyle = 2
