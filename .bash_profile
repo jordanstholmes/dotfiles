@@ -20,10 +20,6 @@ gray="\[\e[1;38;5;239m\]"
 red="\[\e[1;38;5;196m\]"
 export PS1="$newline$green$working_dir$clear_format$gray\$(parse_git_branch)$clear_format$newline${red}❯$clear_format "
 
-####### Add alias for keyboard shortcut scripts #######  
-alias kb="~/.shell-scripts/keyboard-shortcuts.sh"
-alias kbo="~/.shell-scripts/show-shortcuts.sh"
-
 ####### Add to PATH ####### 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -31,7 +27,7 @@ export NVM_DIR="$HOME/.nvm"
 
 mysql_bin="/usr/local/opt/mysql@5.7/bin"
 python_bin="/Users/jordanholmes/Library/Python/2.7/bin"
-shell_scripts="~/.shell-scripts"
+shell_scripts="~/shell-scripts"
 export PATH="$PATH:$shell_scripts:$mysql_bin:$python_bin"
 
 ####### Colorize ls output  ########
