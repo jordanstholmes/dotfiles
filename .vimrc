@@ -49,3 +49,7 @@ augroup END
 let g:netrw_banner = 0
 " Set the display style
 let g:netrw_liststyle = 2
+
+" ##### Display file name #####
+set laststatus=2
+set statusline+=%f
