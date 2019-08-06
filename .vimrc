@@ -82,3 +82,7 @@ set statusline+=Line:%l/%L[%p%%]            " line X of Y [percent of file]
 set statusline+=\ Col:%c                    " current column
 set statusline+=\ Buf:%n                    " Buffer number
 " END: https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-color
+
+" ######### Configure Line Numbers #########
+" change line number color
+highlight LineNr ctermfg=DarkGrey
