@@ -55,7 +55,8 @@ let g:netrw_liststyle = 2
 set laststatus=2
 set statusline+=%f
 
-" change status line color
+" change status line color on insert
+" START: https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-color
 function! InsertStatuslineColor(mode)
   if a:mode == 'i'
     hi statusline guibg=Cyan ctermfg=6 guifg=Black ctermbg=0
@@ -80,3 +81,4 @@ set statusline+=\ %=                        " align left
 set statusline+=Line:%l/%L[%p%%]            " line X of Y [percent of file]
 set statusline+=\ Col:%c                    " current column
 set statusline+=\ Buf:%n                    " Buffer number
+" END: https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-color
