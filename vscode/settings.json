@@ -1,0 +1,44 @@
+{
+    // Vim settings
+    "vim.useSystemClipboard": true,
+    //Theme settings
+    "editor.fontFamily": "Inconsolata, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 17,
+    "editor.lineHeight": 22,
+    "editor.letterSpacing": 0.1,
+    "files.trimTrailingWhitespace": true,
+    "editor.fontWeight": "400",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 5,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": true,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "iTerm.app",
+    "markdown.preview.fontSize": 16,
+    "markdown.preview.breaks": true,
+    "markdown.extension.toc.orderedList": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "window.zoomLevel": 0,
+
+    //Fixing vs code terminal with Powerlevel9k
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.rightClickCopyPaste": true,
+    "editor.tabCompletion": "on",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.detectIndentation": false,
+    "editor.largeFileOptimizations": false,
+
+    // Whether git is enabled
+    "git.enabled": false,
+    "editor.renderControlCharacters": false,
+    "workbench.activityBar.visible": true,
+    "extensions.ignoreRecommendations": false,
+}
