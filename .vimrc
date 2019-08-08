@@ -19,6 +19,8 @@ syntax on
 
 " Add line numbers
 set nu
+set number                     " Show current line number
+set relativenumber             " Show relative line numbers
 
 " show existing tab with 2 spaces width
 set tabstop=2
