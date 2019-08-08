@@ -1,24 +1,7 @@
-####### Configure command line prompt ########
-# function to grab the current branch if in a git repo
-
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-# Configure command-line prompt
-newline="\n"
-
-# \[\e[ = start format info
-# format will extend from then until it hits a clear >> [\e[00m\] 
-# 1;38;5 >> the '1' is for bold, the '38;5' says the upcoming color code is for foreground
-# the 33 is the color code from the 256 color set
-# m\] = end the format info
-green="\[\e[1;38;5;50m\]"
-clear_format="\[\e[00m\]"
-working_dir="\w"
-gray="\[\e[1;38;5;239m\]"
-red="\[\e[1;38;5;196m\]"
-export PS1="$newline$green$working_dir$clear_format$gray\$(parse_git_branch)$clear_format$newline${red}❯$clear_format "
+##############################################
+# SOURCE OTHER CONFIG FILES
+##############################################
+source "/Users/jordanholmes/dotfiles/.prompt"
 
 ####### Add to PATH ####### 
 export NVM_DIR="$HOME/.nvm"
