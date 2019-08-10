@@ -6,7 +6,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'joshdick/onedark.vim'
-Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
  " list ends here. Plugins become visible to Vim after this call
 call plug#end()
