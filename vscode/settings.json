@@ -41,4 +41,11 @@
     "editor.renderControlCharacters": false,
     "workbench.activityBar.visible": true,
     "extensions.ignoreRecommendations": false,
+
+    // FOR SEARCHING NODE_MODULES
+    // "search.exclude": {
+    //     "**/node_modules":false
+    // },
+    // "search.useIgnoreFiles":false
+    // END SEARCHING NODE_MODULES
 }
