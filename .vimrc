@@ -25,6 +25,8 @@ set tabstop=2
 set shiftwidth=2
 " On pressing tab, insert 2 spaces
 set expandtab
+" Same indentation on tab
+set autoindent
 
 " ###### TURN OFF PAREN MATCH HIGHLIGHTING ######   
 " Disable parentheses matching depends on system. This way we should address all cases (?)
