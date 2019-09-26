@@ -860,7 +860,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>792 522 445 77 0 0 1440 877 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>205 459 735 382 0 0 1440 877 </string>
+	<string>-1235 459 735 382 -1440 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>386 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
@@ -870,9 +870,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>32 248 1308 625 0 0 1920 1057 </string>
+	<string>1920 -62 1393 877 1920 -62 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 455 905 602 0 0 1920 1057 </string>
+	<string>-1388 158 905 602 -1440 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>1920 -50 1393 877 1920 -50 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2211,9 +2211,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>55C9ED01-65BD-464F-896D-B9EA286C2877</string>
 	<key>NoSyncLastTipTime</key>
-	<real>587090849.18217802</real>
+	<real>587368915.71116495</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>7</integer>
+	<integer>8</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -2672,6 +2672,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.termid</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.hostname</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -2965,6 +2973,8 @@
 		<string>0073</string>
 		<string>0074</string>
 		<string>0075</string>
+		<string>0076</string>
+		<string>0077</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -3028,7 +3038,7 @@
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StretchTabsToFillBar</key>
