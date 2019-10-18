@@ -17,3 +17,4 @@ export PATH="$PATH:$shell_scripts:$mysql_bin:$python_bin"
 
 ####### Colorize ls output  ########
 alias ls='ls -G'
+alias gitf='git log --name-only'
