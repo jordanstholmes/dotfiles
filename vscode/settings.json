@@ -22,25 +22,22 @@
     "markdown.preview.fontSize": 16,
     "markdown.preview.breaks": true,
     "markdown.extension.toc.orderedList": true,
-    "workbench.colorTheme": "Atom One Dark",
     "window.zoomLevel": 0,
-
-    //Fixing vs code terminal with Powerlevel9k
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.rightClickCopyPaste": true,
-    "editor.tabCompletion": "on",
-    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tokenColorCustomizations": {
+      "[Atom One Dark]": {
+          "semanticHighlighting": true
+      }
+    },
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.detectIndentation": false,
-    "editor.largeFileOptimizations": false,
 
     // Whether git is enabled
     "git.enabled": false,
+
     "editor.renderControlCharacters": false,
     "workbench.activityBar.visible": true,
     "extensions.ignoreRecommendations": false,
+    "workbench.colorTheme": "Atom One Dark",
+
 
     // FOR SEARCHING NODE_MODULES
     // "search.exclude": {
