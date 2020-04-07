@@ -19,4 +19,8 @@ export PATH="$PATH:$shell_scripts:$mysql_bin:$python_bin"
 alias ls='ls -G'
 alias gitf='git log --name-only'
 # alias grade-log='git log -p ":(exclude,top)*package-lock.json"'
-alias  grade-log='git log -p ":(exclude,top)*package-lock.json" ":(exclude,top)*bundle.js"'
+alias grade-log='git log -p ":(exclude,top)*package-lock.json" ":(exclude,top)*bundle.js"'
+alias filechanges='git diff --name-status master..HEAD | egrep -v "vscode|README|package|closing_comments"'
+
+####### Suppress zsh verbose message in macOS Catalina ########
+export BASH_SILENCE_DEPRECATION_WARNING=1
