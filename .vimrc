@@ -1,8 +1,10 @@
 " ###### SETUP PLUGINS AND PLUGIN MANAGER ###### 
 " Plugins will be downloaded under the specified directory
+" see github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins
+Plug 'tpope/vim-commentary'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'joshdick/onedark.vim'
@@ -30,6 +32,12 @@ set autoindent
 " Keep visual selection after indenting that selection
 vnoremap < <gv
 vnoremap > >gv
+" Disable autocomment on new line following commented line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" Allow comment out selection using cmd + /
+" Note, this commenting is configured in iterm keyboard shortcuts
+" This must be configured in iterm because vim cannot map the cmd key
+
 " ###### TURN OFF PAREN MATCH HIGHLIGHTING ######   
 " Disable parentheses matching depends on system. This way we should address all cases (?)
 set noshowmatch
