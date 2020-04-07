@@ -1,6 +1,10 @@
 {
     // Vim settings
     "vim.useSystemClipboard": true,
+    "vim.visualModeKeyBindingsNonRecursive": [
+      { "before": ["<"], "after": ["<","g", "v"] },
+      { "before": [">"], "after": [">","g", "v"] }
+    ],
     //Theme settings
     "editor.fontFamily": "Inconsolata, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 17,
