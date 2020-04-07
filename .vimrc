@@ -27,7 +27,9 @@ set shiftwidth=2
 set expandtab
 " Same indentation on tab
 set autoindent
-
+" Keep visual selection after indenting that selection
+vnoremap < <gv
+vnoremap > >gv
 " ###### TURN OFF PAREN MATCH HIGHLIGHTING ######   
 " Disable parentheses matching depends on system. This way we should address all cases (?)
 set noshowmatch
